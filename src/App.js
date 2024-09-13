@@ -2,7 +2,10 @@ import React from 'react';
 import './App.css';
 
 function App() {
-	const methodDoesNotExist = () => {};
+	const methodDoesNotExist = () => {
+		const a = undefined;
+		console.log(a.b);
+	};
 	return (
 		<div className="App">
 			<button onClick={() => methodDoesNotExist()}>Break the world</button>;
